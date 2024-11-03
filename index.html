@@ -18,7 +18,7 @@
         <div class="flex items-center">
             <div class="logo"><img src="./img/Logo.jpg" alt="logo"></div>
             <span class="text-xl font-semibold">Remind</span>
-            <span class="text-xl font-semibold text-blue-500">me</span>
+            <span class="text-xl font-semibold text-blue-600">me</span>
         </div>
         
         <div class="hidden md:flex items-center space-x-12">
@@ -109,7 +109,7 @@
     <section class="container mx-auto px-8 py-20">
         <div class="flex flex-col md:flex-row items-center justify-between gap-16">
             <div class="md:w-1/2 relative">
-                <div class="bg-blue-100 rounded-[40px]">
+                <div class="bg-blue-100 rounded-[40px] flex lg:flex lg:items-center lg:justify-center">
                     <img src="./img/Image.png" alt="App Screenshot 1">
                 </div>
             </div>
@@ -126,29 +126,34 @@
     </section>
     
     <!-- Feature Section -->
-     <div class="feature-section container mx-auto px-8 py-16 flex flex-col lg:flex-row items-center justify-between">
-        <div class="lg:w-5/12 mb-8 lg:mb-0">
-            <h2 class="text-3xl font-bold mb-4">Get the highest priority application notification</h2>
-            <p class="text-gray-600 text-lg leading-relaxed">
-            The best feature makes you better, with the latest technology to meet your needs. Of course, with such features as organizing schedules and leading assignments, it will make you easier, so get the application now!
-        </p>
-    </div>
-    
-    <!-- Image Column -->
-     <div class="lg:w-6/12 bg-blue-100 rounded-[40px] lg:flex lg:items-center lg:justify-center">
-        <img src="./img/image-2.png" alt="Notification preview">
+     <div class="feature-section container mx-auto px-6 lg:px-8 py-12 lg:py-16">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
+        <div class="lg:w-5/12 text-center lg:text-left order-2 lg:order-1">
+            <h2 class="text-2xl lg:text-3xl font-bold mb-3 lg:mb-4">
+                Get the highest priority application notification
+            </h2>
+            <p class="text-gray-600 text-base lg:text-lg leading-relaxed">
+                The best feature makes you better, with the latest technology to meet your needs. Of course, with such features as organizing schedules and leading assignments, it will make you easier, so get the application now!
+            </p>
+        </div>
+        
+        <!-- Image Column - Order 1 di mobile, 2 di desktop -->
+        <div class="w-full lg:w-6/12 order-1 lg:order-2">
+            <div class="bg-blue-100 rounded-[40px] flex lg:flex lg:items-center lg:justify-center">
+                <img src="./img/image-2.png" alt="Notification preview" class="w-full h-auto">
+            </div>
+        </div>
     </div>
     </div>
     
     <!-- Download Section -->
-     <div class="download-section container mx-auto px-8 py-16 bg-blue-500 text-white p-16 flex flex-col items-center rounded-[40px] mt-12">
-        <h3 id="about us"class="text-2xl font-semibold mb-4 text-center max-w-xl">
-        Download an app now and the various benefits you will get immediately</h3>
-        <div class="flex gap-4 mt-4">
-            <button class="bg-white text-blue-500 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors shadow-md">Download App</button>
-            <button class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-500 transition-colors shadow-md">About App</button>
-        </div>
+     <div class="download-section container mx-auto px-8 py-16 bg-blue-500 text-white flex flex-col items-center rounded-[40px] mt-12">
+        <h3 id="about-us" class="text-2xl font-semibold mb-4 text-center max-w-xl"> Download an app now and the various benefits you will get immediately</h3>
+        <div class="flex flex-col gap-4 mt-4 w-full items-center">
+            <button class="bg-white text-blue-500 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors shadow-md w-full max-w-xs"> Download App </button>
+        <button class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-500 transition-colors shadow-md w-full max-w-xs"> About App </button>
     </div>
+</div>
     
     <!-- Testimonial Section -->
      <div class="container mx-auto px-4 py-12">
@@ -183,74 +188,120 @@
     </div>
 
     <!-- Footer Section -->
-    <footer class="mt-20">
+    <footer class="p-6">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-                <div class="flex items-center mb-4">
-                    <span class="text-xl font-bold">Remind<span class="text-blue-600">me</span></span>
+        <div class="mb-8 md:mb-0">
+            <div class="flex items-center mb-2 md:hidden">
+                <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-2">
+                    <img src="./img/Logo.jpg" alt="logo">
                 </div>
-                <p class="text-gray-600 text-sm">
-                    Task deadlines and scheduling applications with various benefits and advantages
-                </p>
+                <span class="text-xl font-semibold">Remind<span class="text-blue-600">me</span></span>
             </div>
+            <div class="hidden md:block mb-4">
+                <span class="text-xl font-bold">Remind<span class="text-blue-600">me</span></span>
+            </div>
+            <p class="text-gray-600 text-sm">
+                Task deadlines and scheduling applications with various benefits and advantages
+            </p>
+        </div>
 
-            <!-- Sitemaps -->
+        <!-- Sitemaps and Advantages on mobile -->
+        <div class="grid grid-cols-2 gap-8 md:hidden">
+            <!-- Sitemaps Mobile -->
             <div>
-                <h3 class="font-bold mb-4">Sitemaps</h3>
-                <ul class="space-y-2">
-                    <li class="flex items-center space-x-2">
+                <h3 class="font-semibold mb-4">Sitemaps</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-center space-x-3">
                         <div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
-                        <a href="#" class="text-gray-600 hover:text-blue-600">Home</a>
+                        <a href="#" class="text-gray-600">Home</a>
                     </li>
-                    <li class="flex items-center space-x-2">
+                    <li class="flex items-center space-x-3">
                         <div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
-                        <a href="#" class="text-gray-600 hover:text-blue-600">Features</a>
+                        <a href="#" class="text-gray-600">Features</a>
                     </li>
-                    <li class="flex items-center space-x-2">
+                    <li class="flex items-center space-x-3">
                         <div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
-                        <a href="#" class="text-gray-600 hover:text-blue-600">About Us</a>
+                        <a href="#" class="text-gray-600">About Us</a>
                     </li>
                 </ul>
             </div>
 
-            <!-- Advantages -->
+            <!-- Advantages Mobile -->
             <div>
-                <h3 class="font-bold mb-4">Advantages</h3>
-                <ul class="space-y-2">
-                    <li class="flex items-center space-x-2">
+                <h3 class="font-semibold mb-4">Advantages</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-center space-x-3">
                         <div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
-                        <a href="#" class="text-gray-600 hover:text-blue-600">Set Task Better</a>
+                        <a href="#" class="text-gray-600">Set Task Better</a>
                     </li>
-                    <li class="flex items-center space-x-2">
+                    <li class="flex items-center space-x-3">
                         <div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
-                        <a href="#" class="text-gray-600 hover:text-blue-600">Easy Manage</a>
+                        <a href="#" class="text-gray-600">Easy Manage</a>
                     </li>
-                    <li class="flex items-center space-x-2">
+                    <li class="flex items-center space-x-3">
                         <div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
-                        <a href="#" class="text-gray-600 hover:text-blue-600">Get Notification</a>
-                    </li>
+                        <a href="#" class="text-gray-600">Get Notification</a></li>
                 </ul>
             </div>
+        </div>
 
-            <!-- Follow Us -->
-            <div>
-                <h3 class="font-bold mb-4">Follow Us</h3>
-                <div class="flex space-x-4">
-                    <a href="#" class="text-blue-600 hover:text-blue-700">
-                        <img src="./img/uim_facebook-f.png" alt="fb">
-                    </a>
-                    <a href="#" class="text-blue-600 hover:text-blue-500">
-                        <img src="./img/uim_twitter.png" alt="twitter">
-                    </a>
-                    <a href="#" class="text-blue-600 hover:text-blue-700">
-                        <img src="./img/uim_linkedin-alt.png" alt="linkedin">
-                    </a>
-                </div>
+        <!-- Sitemaps Desktop -->
+        <div class="hidden md:block">
+            <h3 class="font-bold mb-4">Sitemaps</h3>
+            <ul class="space-y-2">
+                <li class="flex items-center space-x-2">
+                    <div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
+                    <a href="#" class="text-gray-600 hover:text-blue-600">Home</a>
+                </li>
+                <li class="flex items-center space-x-2">
+                    <div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
+                    <a href="#" class="text-gray-600 hover:text-blue-600">Features</a>
+                </li>
+                <li class="flex items-center space-x-2">
+                    <div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
+                    <a href="#" class="text-gray-600 hover:text-blue-600">About Us</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Advantages Desktop -->
+        <div class="hidden md:block">
+            <h3 class="font-bold mb-4">Advantages</h3>
+            <ul class="space-y-2">
+                <li class="flex items-center space-x-2">
+                    <div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
+                    <a href="#" class="text-gray-600 hover:text-blue-600">Set Task Better</a>
+                </li>
+                <li class="flex items-center space-x-2">
+                    <div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
+                    <a href="#" class="text-gray-600 hover:text-blue-600">Easy Manage</a>
+                </li>
+                <li class="flex items-center space-x-2">
+                    <div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
+                    <a href="#" class="text-gray-600 hover:text-blue-600">Get Notification</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Follow Us -->
+        <div>
+            <h3 class="font-semibold md:font-bold mb-4">Follow Us</h3>
+            <div class="flex space-x-4">
+                <a href="#" class="text-blue-600">
+                    <img src="./img/uim_facebook-f.png" alt="fb" class="w-6 h-6">
+                </a>
+                <a href="#" class="text-blue-600">
+                    <img src="./img/uim_twitter.png" alt="twitter" class="w-6 h-6">
+                </a>
+                <a href="#" class="text-blue-600">
+                    <img src="./img/uim_linkedin-alt.png" alt="linkedin" class="w-6 h-6">
+                </a>
             </div>
         </div>
     </div>
+</footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
