@@ -7,27 +7,29 @@
     
     <!-- Tailwind CSS dengan cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
  
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 text-black dark:bg-gray-900 dark:text-white">
     <!-- Navbar -->
      <nav class="container mx-auto px-8 py-6">
         <div class="flex items-center justify-between">
-            <div class="flex items-center">
-                <div class="logo"><img src="./img/Logo.jpg" alt="logo"></div>
-                <span class="text-xl font-semibold">Remind</span>
-                <span class="text-xl font-semibold text-blue-500">me</span>
-            </div>
-            
-            <div class="hidden md:flex items-center space-x-12">
-                <a href="#" class="text-xl font-semibold text-blue-600">Home</a>
-                <a href="#" class="text-gray-600 hover:text-blue-600">Features</a>
-                <a href="#" class="text-gray-600 hover:text-blue-600">About us</a>
-            </div>
-            
-            <!-- Hamburger Menu -->
-             <div class="md:hidden">
-                <button id="hamburger-button" class="focus:outline-none">
+        <div class="flex items-center">
+            <div class="logo"><img src="./img/Logo.jpg" alt="logo"></div>
+            <span class="text-xl font-semibold">Remind</span>
+            <span class="text-xl font-semibold text-blue-500">me</span>
+        </div>
+        
+        <div class="hidden md:flex items-center space-x-12">
+            <a href="#" class="text-xl font-semibold text-blue-600">Home</a>
+            <a href="#" class="text-gray-600 hover:text-blue-600">Features</a>
+            <a href="#" class="text-gray-600 hover:text-blue-600">About us</a>
+        </div>
+        
+        <!-- Hamburger Menu -->
+        <div class="md:hidden">
+            <button id="hamburger-button" class="focus:outline-none">
                 <img src="./img/hamburger-menu.png" alt="hamburgermenu">
             </button>
         </div>
@@ -37,13 +39,14 @@
         </button>
     </div>
     
-    <!-- Mobile Menu -->
-     <div id="mobile-menu" class="md:hidden hidden flex flex-col items-center mt-4 space-y-4">
-        <a href="#" class="text-xl font-semibold text-blue-600">Home</a>
-        <a href="#" class="text-gray-600 hover:text-blue-600">Features</a>
-        <a href="#" class="text-gray-600 hover:text-blue-600">About us</a>
-    </div>
-</nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden flex flex-col items-end mt-4 space-y-4">
+            <a href="#" class="text-xl font-semibold text-blue-600">Home</a>
+            <a href="#" class="text-gray-600 hover:text-blue-600">Features</a>
+            <a href="#" class="text-gray-600 hover:text-blue-600">About us</a>
+        </div>
+    </nav>
+
 
     <!-- Hero Section -->
     <div class="container mx-auto px-8 pt-24 pb-20 flex flex-col md:flex-row items-center justify-between">
@@ -249,5 +252,6 @@
     </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
