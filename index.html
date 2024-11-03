@@ -11,7 +11,7 @@
 
  
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 scroll-smooth">
     <!-- Navbar -->
      <nav class="container mx-auto px-8 py-6">
         <div class="flex items-center justify-between">
@@ -23,8 +23,8 @@
         
         <div class="hidden md:flex items-center space-x-12">
             <a href="#" class="text-xl font-semibold text-blue-600">Home</a>
-            <a href="#" class="text-gray-600 hover:text-blue-600">Features</a>
-            <a href="#" class="text-gray-600 hover:text-blue-600">About us</a>
+            <a href="#features" class="text-gray-600 hover:text-blue-600">Features</a>
+            <a href="#about us" class="text-gray-600 hover:text-blue-600">About us</a>
         </div>
         
         <!-- Hamburger Menu -->
@@ -42,15 +42,14 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="md:hidden hidden flex flex-col items-end mt-4 space-y-4">
             <a href="#" class="text-xl font-semibold text-blue-600">Home</a>
-            <a href="#" class="text-gray-600 hover:text-blue-600">Features</a>
-            <a href="#" class="text-gray-600 hover:text-blue-600">About us</a>
+            <a href="#features" class="text-gray-600 hover:text-blue-600">Features</a>
+            <a href="#about us" class="text-gray-600 hover:text-blue-600">About us</a>
         </div>
     </nav>
 
-
     <!-- Hero Section -->
     <div class="container mx-auto px-8 pt-24 pb-20 flex flex-col md:flex-row items-center justify-between">
-        <div class="md:w-5/12 mb-16 md:mb-0 md:pr-8">
+        <div class="md:w-5/12 mb-16 md:mb-0 md:pr-12">
             <h1 class="text-5xl font-bold mb-8 leading-tight">
                 Manage Schedule and Task Easy
             </h1>
@@ -64,7 +63,7 @@
 
     <!-- image -->
     <div class="flex-1 mb-10 md:mb-16 lg:mb-0 z-10 lg:order-2">
-        <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="./img/Hero Image (1).png" alt="hero">
+        <img class="w-6/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="./img/Hero Image (1).png" alt="hero">
       </div>              
     </div>
 
@@ -116,7 +115,7 @@
             </div>
 
             <div class="md:w-1/2">
-                <h2 class="text-4xl font-bold mb-6">
+                <h2 id="features" class="text-4xl font-bold mb-6 ">
                     Set up task and schedule with a best features
                 </h2>
                 <p class="text-gray-600 text-lg leading-relaxed mb-8">
@@ -136,14 +135,14 @@
     </div>
     
     <!-- Image Column -->
-     <div class="lg:w-6/12 bg-blue-100 rounded-[40px]">
+     <div class="lg:w-6/12 bg-blue-100 rounded-[40px] lg:flex lg:items-center lg:justify-center">
         <img src="./img/image-2.png" alt="Notification preview">
     </div>
     </div>
     
     <!-- Download Section -->
-     <div class="download-section bg-blue-500 text-white p-12 flex flex-col items-center rounded-[40px] mt-12 mx-12">
-        <h3 class="text-2xl font-semibold mb-4 text-center max-w-xl">
+     <div class="download-section container mx-auto px-8 py-16 bg-blue-500 text-white p-16 flex flex-col items-center rounded-[40px] mt-12">
+        <h3 id="about us"class="text-2xl font-semibold mb-4 text-center max-w-xl">
         Download an app now and the various benefits you will get immediately</h3>
         <div class="flex gap-4 mt-4">
             <button class="bg-white text-blue-500 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors shadow-md">Download App</button>
